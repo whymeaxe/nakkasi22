@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NAKKASI | ABOUT</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#535553",
+                    "on-primary-fixed": "#001356",
+                    "on-primary-fixed-variant": "#0035be",
+                    "secondary-fixed": "#e5e2e1",
+                    "outline": "#747688",
+                    "primary-container": "#2e5bff",
+                    "inverse-surface": "#303031",
+                    "surface-container-high": "#e9e8e7",
+                    "on-error-container": "#93000a",
+                    "inverse-on-surface": "#f2f0f0",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "tertiary-container": "#6c6d6b",
+                    "on-surface": "#1b1c1c",
+                    "surface-variant": "#e4e2e2",
+                    "tertiary-fixed-dim": "#c6c7c4",
+                    "secondary": "#5f5e5e",
+                    "secondary-container": "#e5e2e1",
+                    "on-secondary-container": "#656464",
+                    "on-surface-variant": "#434656",
+                    "surface-dim": "#dbdad9",
+                    "on-tertiary-fixed": "#1a1c1a",
+                    "background": "#fbf9f8",
+                    "surface-tint": "#124af0",
+                    "surface-container-highest": "#e4e2e2",
+                    "on-background": "#1b1c1c",
+                    "on-secondary-fixed-variant": "#474646",
+                    "inverse-primary": "#b8c3ff",
+                    "on-primary-container": "#efefff",
+                    "primary-fixed-dim": "#b8c3ff",
+                    "on-error": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "on-secondary": "#ffffff",
+                    "primary": "#0040e0",
+                    "error": "#ba1a1a",
+                    "primary-fixed": "#dde1ff",
+                    "on-tertiary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "surface-container-low": "#f5f3f3",
+                    "on-tertiary-fixed-variant": "#454745",
+                    "on-tertiary-container": "#f0f0ed",
+                    "outline-variant": "#c4c5d9",
+                    "surface-container": "#efeded",
+                    "surface-bright": "#fbf9f8",
+                    "surface": "#fbf9f8",
+                    "tertiary-fixed": "#e2e3e0",
+                    "surface-container-lowest": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-desktop": "80px",
+                    "gutter": "32px",
+                    "margin-tablet": "40px",
+                    "container-max": "1440px",
+                    "margin-mobile": "24px",
+                    "section-gap": "160px",
+                    "unit": "8px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Bodoni Moda"],
+                    "display-lg": ["Bodoni Moda"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "headline-lg-mobile": ["Bodoni Moda"],
+                    "headline-lg": ["Bodoni Moda"],
+                    "label-lg": ["Plus Jakarta Sans"],
+                    "display-md": ["Bodoni Moda"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "label-sm": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "display-lg": ["80px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "label-lg": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "display-md": ["64px", {"lineHeight": "1.1", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<link rel="stylesheet" href="assets/css/responsive.css">
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-on-scroll.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .text-outline {
+            -webkit-text-stroke: 1px currentColor;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary-container selection:text-on-primary-container overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-8 left-1/2 -translate-x-1/2 w-[90%] rounded-full backdrop-blur-xl border border-outline/10 bg-surface/80 flex justify-between items-center px-6 md:px-12 py-4 max-w-container-max mx-auto z-50">
+<div class="flex items-center gap-8">
+<a href="index.html" class="font-display-md text-[24px] md:text-display-md tracking-tighter text-on-surface">NAKKASI</a>
+<div id="nav-links" class="hidden md:flex items-center gap-8">
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors duration-300" href="collection.html">GALLERY</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors duration-300" href="collection.html">COLLECTIONS</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors duration-300" href="collection.html">ARCHIVE</a>
+<a class="font-label-lg text-label-lg text-primary border-b border-primary" href="about.html">STUDIO</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<button id="bag-toggle" class="scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-primary">shopping_bag</span>
+</button>
+<button id="menu-toggle" class="md:hidden">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="min-h-screen pt-[200px] px-margin-mobile md:px-margin-desktop flex flex-col justify-end pb-24">
+<div class="max-w-container-max mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-8">
+<h1 class="font-display-lg text-[48px] md:text-display-lg uppercase leading-none reveal-on-scroll">
+                    The Nakkasi Narrative: <br/>
+<span class="italic text-outline">Global Vision, Local Craft.</span>
+</h1>
+</div>
+<div class="md:col-span-4 flex items-end">
+<p class="font-body-lg text-body-lg text-secondary reveal-on-scroll delay-100">
+                    Nakkasi is where avant-garde international design meets the unparalleled precision of heritage Indian craftsmanship.
+                </p>
+</div>
+</div>
+</section>
+<!-- The Studio Section / Process -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 order-2 md:order-1">
+<div class="space-y-unit * 8">
+<span class="font-label-lg text-label-lg text-primary uppercase tracking-[0.2em] block reveal-on-scroll">THE PROCESS</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg reveal-on-scroll">Where thought becomes structural.</h2>
+<div class="h-1px w-24 bg-primary reveal-on-scroll"></div>
+<p class="font-body-lg text-body-lg text-secondary reveal-on-scroll">
+                            Our workshop is a dialogue between global aesthetics and local technique. Here, we interrogate materials—indigenous woods and raw metals—until they yield to the demands of modern structural form. We empower master Indian artisans to breathe life into minimalist concepts, ensuring every joint and curve carries the mark of human excellence.
+                        </p>
+</div>
+</div>
+<div class="md:col-span-7 order-1 md:order-2 mb-12 md:mb-0">
+<div class="relative aspect-[4/5] md:aspect-[16/10] overflow-hidden reveal-on-scroll">
+<img alt="Close-up detail shot of a master craftsman's hands working on a piece of dark Indian wood. The wood has a unique, modern curved shape. Fine wood shavings, traditional tools meeting modern design. High contrast, warm tones, professional photography." class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjyKOChC_mjeq5eQcKaDPr635jrVDj4ANp4a7Ym_mJXYc5J4sH1J63BqIOc0H290JHuliXE7hiZBOrA15x6mXmh990rZ8Ucyvu-8BMsGRY9dq-VZM0yhO-LwkUhXv24lWJcIsYEGc1VZhLeI5LMZNpUfTuRJDcx31dts4Dag9v4gyLIJm3hej-4Qxh-Ovz4YO215jVp30NVb2d_yerEOQdmHgp2MwVPJvS07LkV7bkE-LyNeZ2yS0S"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Manifesto Section -->
+<section class="relative min-h-screen flex items-center py-section-gap overflow-hidden">
+<div class="relative z-10 px-margin-mobile md:px-margin-desktop w-full">
+<div class="max-w-4xl mx-auto text-center space-y-12">
+<h2 class="font-display-md text-display-md uppercase leading-tight reveal-on-scroll">
+                    Our Manifesto: <br/>
+<span class="font-body-md text-body-md italic lowercase tracking-normal">A bridge across borders.</span>
+</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-left pt-12 border-t border-outline/20">
+<div class="reveal-on-scroll delay-100">
+<span class="font-label-sm text-label-sm text-primary block mb-2">01</span>
+<h3 class="font-headline-md text-headline-md mb-4 uppercase">Cultural Synergy</h3>
+<p class="font-body-md text-body-md text-secondary">
+                            We translate foreign design inspiration into the vernacular of Indian excellence. Our pieces are a testament to what happens when global innovation is realized through local mastery.
+                        </p>
+</div>
+<div class="reveal-on-scroll delay-200">
+<span class="font-label-sm text-label-sm text-primary block mb-2">02</span>
+<h3 class="font-headline-md text-headline-md mb-4 uppercase">Material Honesty</h3>
+<p class="font-body-md text-body-md text-secondary">
+                            We celebrate indigenous woods—Sissoo, Teak, and Rosewood—worked entirely by hand. No synthetic masks; only the raw, honest texture of the earth refined by the artisan’s touch.
+                        </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Philosophy / Bento Grid -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<!-- Large Hero Card -->
+<div class="md:col-span-2 md:row-span-2 relative group reveal-on-scroll">
+<div class="aspect-square bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A close-up shot of a sculptural cobalt blue chair made of industrial-grade steel, set against a stark white wall." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_FugD9y7G2N17fZL-FXztKmlv9XMYCHGQhBHNQJdnPe55gkGqk0lWi_zjLewzy7f7nF95yJwqo_MOty8cXArGWrV_I-u0zoLKZlQvZ6jsZQiQlgLoJa4Ih34xmASj6PEXhxwjXw-40bPDeVxfV6HUavzSJ_J-2zCQph4_V005GDv-jG0OLGI9SZkr0ptUfX32s7vmANrxRrlmo4I54YrtlRxiFKDej5Oi74G7zWWuWQz-PZuhpnjk"/>
+</div>
+<div class="absolute bottom-8 left-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+<span class="font-label-lg text-label-lg">COBALT SERIES</span>
+</div>
+</div>
+<!-- Text Card -->
+<div class="md:col-span-2 p-12 bg-on-surface text-background flex flex-col justify-center reveal-on-scroll delay-100">
+<h4 class="font-headline-lg text-headline-lg mb-6">"Design is the silent storyteller of a culture."</h4>
+<p class="font-body-lg text-body-lg opacity-80">
+                        We believe that every piece of furniture carries the narrative of its makers. Our role is to ensure that narrative is one of uncompromising heritage and modern vision.
+                    </p>
+</div>
+<!-- Small Image 1 -->
+<div class="reveal-on-scroll delay-200">
+<div class="aspect-square bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Detailed macro photograph of dark walnut wood grain meeting a polished glass surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5xbmqPcl1PfDVbnRZZiW7uXzRn9OHlq3YVd5Zyu4hqmiDaaNhtv3KNGM-XxmKH4Ar-zuJC3XRMZhRs5NcVJ5HsQ9Z48RfmcbI0uGj_hQr3iMgkJPzVqdM27p50XBdZzSilWSgR-Rb5zp2KmDCJ_TjGGRmDT94uKo23m8b1zbrt2pw23C7Xw8b4UVyo1ZDjKXukqvu37_joRvT4rgGsjSaPS16Ck8pZcz16QU9o8TNHZojbfIrWvpZ"/>
+</div>
+</div>
+<!-- Small Image 2 -->
+<div class="reveal-on-scroll delay-300">
+<div class="aspect-square bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A minimalist living room corner featuring a single Nakkasi architectural coffee table." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw3i44XAjJiWl2Tmh4qx8u8oDLt3WBD4ywglAw3YE0ijNvwUhl-1HyydmX7-C70AHD75gLEzHrgcICQGa3mTXKAn_Sh1-RmCURgziGeLxDznqjXeMUVG13ily9h-4hHo1vo4GGYei2MqtfjEfsUeqop5fDESTOBFEnyzrFE4pdLXwAgT-ySNUoEJgCX5n-k700qldxereIH6l3B1AWoVQ7W0MlOxtPf4mYyaf4gzudGNIqoywgbA0g"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / CTA -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop text-center">
+<div class="max-w-2xl mx-auto space-y-12">
+<span class="font-label-lg text-label-lg text-primary uppercase tracking-[0.3em] reveal-on-scroll">JOIN THE ARCHIVE</span>
+<h2 class="font-display-md text-display-md reveal-on-scroll">Monthly Dispatches from the Avant-Garde.</h2>
+<form id="newsletter-form" class="relative reveal-on-scroll">
+<input required="" class="w-full bg-transparent border-0 border-b border-outline py-6 font-label-lg text-label-lg focus:ring-0 focus:border-primary transition-all placeholder:text-outline" placeholder="YOUR EMAIL ADDRESS" type="email"/>
+<button class="absolute right-0 bottom-6" type="submit">
+<span class="material-symbols-outlined text-primary">arrow_right_alt</span>
+</button>
+</form>
+<p id="newsletter-success" class="hidden mt-6 font-label-lg text-label-lg text-primary">Thank you — you're on the list.</p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline/5 pt-section-gap pb-24 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-6 space-y-12">
+<h2 class="font-display-lg text-display-lg uppercase leading-none text-on-surface">NAKKASI.</h2>
+<p class="font-body-md text-body-md text-secondary max-w-sm">
+                ARCHITECTURAL FORMS FOR THE MODERN COLLECTOR.
+            </p>
+</div>
+<div class="md:col-span-2 space-y-4">
+<span class="font-label-lg text-label-lg text-on-surface block mb-6">MENU</span>
+<a class="font-body-md text-body-md text-secondary hover:text-primary-container block transition-all" href="collection.html">GALLERY</a>
+<a class="font-body-md text-body-md text-secondary hover:text-primary-container block transition-all" href="collection.html">COLLECTIONS</a>
+<a class="font-body-md text-body-md text-secondary hover:text-primary-container block transition-all" href="about.html">STUDIO</a>
+</div>
+<div class="md:col-span-2 space-y-4">
+<span class="font-label-lg text-label-lg text-on-surface block mb-6">LEGAL</span>
+<a class="font-body-md text-body-md text-secondary hover:text-primary-container block transition-all" href="#">PRIVACY</a>
+<a class="font-body-md text-body-md text-secondary hover:text-primary-container block transition-all" href="#">TERMS</a>
+<a class="font-body-md text-body-md text-secondary hover:text-primary-container block transition-all" href="#">INSTITUTIONAL</a>
+</div>
+<div class="md:col-span-2 space-y-4">
+<span class="font-label-lg text-label-lg text-on-surface block mb-6">FOLLOW</span>
+<a class="font-body-md text-body-md text-secondary hover:text-primary-container block transition-all" href="#">INSTAGRAM</a>
+<a class="font-body-md text-body-md text-secondary hover:text-primary-container block transition-all" href="#">CAREERS</a>
+</div>
+</div>
+<div class="max-w-container-max mx-auto mt-24 flex flex-col md:flex-row justify-between items-center border-t border-outline/10 pt-12">
+<p class="font-label-sm text-label-sm text-secondary opacity-80">©2024 NAKKASI. ALL RIGHTS RESERVED.</p>
+<div class="flex gap-8 mt-4 md:mt-0">
+<span class="font-label-sm text-label-sm text-secondary">NEW DELHI</span>
+<span class="font-label-sm text-label-sm text-secondary">MILAN</span>
+<span class="font-label-sm text-label-sm text-secondary">TOKYO</span>
+</div>
+</div>
+</footer>
+<script src="assets/js/products.js" defer></script>
+<script src="assets/js/cart.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+<script>
+    const observerOptions = {
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
+</script>
+</body></html>
