@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Collections - Nakkasi</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo">NAKKASI</a>
+        <ul class="nav-links">
+            <li><a href="collections.html" class="active">Collections</a></li>
+            <li><a href="story.html">Our Story</a></li>
+            <li><a href="bespoke.html">Bespoke</a></li>
+            <li><a href="atelier.html">Atelier</a></li>
+        </ul>
+        <div class="nav-icons">
+            <button class="icon-btn" onclick="toggleCart()">🛍</button>
+            <button class="icon-btn" onclick="toggleAccount()">👤</button>
+        </div>
+    </div>
+</nav>
+
+<section class="page-intro">
+    <p class="section-tag">The Collections</p>
+    <div class="badge-tag"><em>70 Years of Legacy<br>Craftsmanship</em></div>
+    <p class="page-desc">An archival journey through Indian craftsmanship, reimagined for the modern collector. Each piece is a dialogue between the heritage of Nakkasi and contemporary form.</p>
+</section>
+
+<section class="collections-section">
+    <div class="container collections-layout">
+        <aside class="filters">
+            <h4>MATERIAL</h4>
+            <label><input type="checkbox" onchange="filterProducts()" data-filter="material" value="teak"> Teak Wood</label>
+            <label><input type="checkbox" onchange="filterProducts()" data-filter="material" value="walnut"> Indian Walnut</label>
+            <label><input type="checkbox" onchange="filterProducts()" data-filter="material" value="rosewood"> Rosewood</label>
+            
+            <h4>STYLE</h4>
+            <label><input type="radio" name="style" onchange="filterProducts()" value="classic"> Classic Heritage</label>
+            <label><input type="radio" name="style" onchange="filterProducts()" value="modern"> Modern Minimalist</label>
+            <label><input type="radio" name="style" onchange="filterProducts()" value="royal"> Royal Atelier</label>
+            
+            <h4>ROOMS</h4>
+            <a href="#" class="filter-link">Living Lounge</a>
+            <a href="#" class="filter-link">Formal Dining</a>
+            <a href="#" class="filter-link">Private Study</a>
+            <a href="#" class="filter-link">Bedroom Sanctuary</a>
+        </aside>
+        
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=600" alt="The Rajputana Throne">
+                <div class="product-info">
+                    <div class="product-header">
+                        <h3>The Rajputana Throne</h3>
+                        <span class="price">₹1,85,000</span>
+                    </div>
+                    <p>Indian Walnut with hand-rubbed linseed oil finish and custom brass joinery.</p>
+                    <button class="btn btn-outline-dark" onclick="requestBespoke('The Rajputana Throne')">REQUEST A BESPOKE VARIATION</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1615529182904-14819c35db37?w=600" alt="Arched Haveli Table">
+                <div class="product-info">
+                    <div class="product-header">
+                        <h3>Arched Haveli Table</h3>
+                        <span class="price">₹4,20,000</span>
+                    </div>
+                    <p>Reclaimed Teak with 24K Gold leaf inlay and architectural silhouette.</p>
+                    <button class="btn btn-outline-dark" onclick="requestBespoke('Arched Haveli Table')">REQUEST A BESPOKE VARIATION</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1594620302200-9a762244a156?w=600" alt="The Scholar's Cabinet">
+                <div class="product-info">
+                    <div class="product-header">
+                        <h3>The Scholar's Cabinet</h3>
+                        <span class="price">₹2,95,000</span>
+                    </div>
+                    <p>Aged Rosewood with bone-inlay details and velvet-lined drawers.</p>
+                    <button class="btn btn-outline-dark" onclick="requestBespoke('The Scholars Cabinet')">REQUEST A BESPOKE VARIATION</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?w=600" alt="Lake Palace Daybed">
+                <div class="product-info">
+                    <div class="product-header">
+                        <h3>Lake Palace Daybed</h3>
+                        <span class="price">₹3,40,000</span>
+                    </div>
+                    <p>Hand-woven silk upholstery on a seasoned Teak frame. Available in multiple finishes.</p>
+                    <button class="btn btn-outline-dark" onclick="requestBespoke('Lake Palace Daybed')">REQUEST A BESPOKE VARIATION</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="atelier-service">
+    <div class="container atelier-grid">
+        <div>
+            <p class="section-tag gold">THE ATELIER SERVICE</p>
+            <h2 class="light">Your Vision,<br><em>Our Craft.</em></h2>
+            <p class="light-text">Every piece in our collection can be tailored to your specific spatial requirements. From material selection to dimension adjustments, our master craftsmen work to your exact specifications.</p>
+            <a href="bespoke.html" class="btn btn-gold">CONSULT OUR DESIGNERS</a>
+        </div>
+        <div class="atelier-img">
+            <img src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?w=800" alt="Atelier">
+            <div class="atelier-badge"><em>Bespoke since 1954</em></div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container footer-grid">
+        <div>
+            <h4>NAKKASI</h4>
+            <p>Preserving the soul of Rajasthani craftsmanship through modern architectural furniture.</p>
+        </div>
+        <div>
+            <h5>COLLECTIONS</h5>
+            <ul>
+                <li><a href="#">The Living Series</a></li>
+                <li><a href="#">Bedroom Sanctuary</a></li>
+                <li><a href="#">Study & Office</a></li>
+                <li><a href="#">New Arrivals</a></li>
+            </ul>
+        </div>
+        <div>
+            <h5>SUPPORT</h5>
+            <ul>
+                <li><a href="bespoke.html">Bespoke Services</a></li>
+                <li><a href="#">Care Guide</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <h5>INNER CIRCLE</h5>
+            <p>Join our list for exclusive atelier updates and private showings.</p>
+            <form onsubmit="handleNewsletter(event)" class="mini-form">
+                <input type="email" placeholder="Email address" required>
+                <button type="submit">→</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 1954 NAKKASI. SEVENTY YEARS OF UNCOMPROMISING CRAFTSMANSHIP.</p>
+        <div><a href="#">PRIVACY</a> <a href="#">TERMS</a></div>
+    </div>
+</footer>
+
+<div id="toast" class="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bespoke - Nakkasi</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo">NAKKASI</a>
+        <ul class="nav-links">
+            <li><a href="collections.html">Collections</a></li>
+            <li><a href="story.html">Our Story</a></li>
+            <li><a href="bespoke.html" class="active">Bespoke</a></li>
+            <li><a href="atelier.html">Atelier</a></li>
+        </ul>
+        <div class="nav-icons">
+            <button class="icon-btn" onclick="toggleCart()">🛍</button>
+            <button class="icon-btn" onclick="toggleAccount()">👤</button>
+        </div>
+    </div>
+</nav>
+
+<section class="bespoke-intro container">
+    <div class="badge-tag"><em>Begin Your Legacy</em></div>
+    <h1 class="huge">A Dialogue of<br>Craftsmanship.</h1>
+    <p class="lead">Transforming your vision into a generational heirloom requires time, precision, and an uncompromising dedication to material excellence. Connect with our Master Craftsmen to initiate your bespoke commission.</p>
+</section>
+
+<section class="bespoke-form-section">
+    <div class="container bespoke-grid">
+        <div class="form-card">
+            <h3 class="section-tag">COMMISSION DETAILS</h3>
+            <form onsubmit="handleBespoke(event)">
+                <label>FULL NAME</label>
+                <input type="text" placeholder="Enter your full name" required>
+                
+                <div class="form-row">
+                    <div>
+                        <label>PROJECT TYPE</label>
+                        <select required>
+                            <option>Private Estate Furniture</option>
+                            <option>Commercial Project</option>
+                            <option>Restoration</option>
+                            <option>Full Interior</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>PREFERRED WOOD</label>
+                        <select required>
+                            <option>Himalayan Walnut</option>
+                            <option>Reclaimed Teak</option>
+                            <option>Aged Rosewood</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <label>PREFERRED CONSULTATION DATE</label>
+                <input type="date" required>
+                
+                <label>THE VISION</label>
+                <textarea placeholder="Describe the intended placement and emotional resonance of the piece..." rows="5"></textarea>
+                
+                <button type="submit" class="btn btn-dark full">REQUEST PRIVATE CONSULTATION</button>
+            </form>
+        </div>
+        
+        <div class="side-info">
+            <div class="atelier-card">
+                <h3>The Udaipur Atelier</h3>
+                <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=600" alt="Map">
+                <div class="info-row">
+                    <span>📍</span>
+                    <p>The Royal Enclave, Street of Artisans, Lake Pichola, Udaipur, India 313001</p>
+                </div>
+                <div class="info-row">
+                    <span>✉</span>
+                    <div><strong>CONCIERGE SERVICE</strong><p>concierge@heritageudaipur.com</p></div>
+                </div>
+                <div class="info-row">
+                    <span>📞</span>
+                    <div><strong>PRIVATE ATELIER LINE</strong><p>+91 294 242 1954</p></div>
+                </div>
+            </div>
+            <div class="quote-card">
+                <div class="quote-mark">99</div>
+                <p><em>"We do not build for the season. We build for the century. Every stroke of the chisel is a commitment to longevity."</em></p>
+                <div class="quote-line"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials">
+    <div class="container">
+        <div class="testimonial-divider"></div>
+        <h2 class="text-center">VOICES OF THE INNER CIRCLE</h2>
+        <div class="testi-grid">
+            <div class="testi">
+                <div class="stars">★★★★★</div>
+                <p>"Nakkasi's bespoke walnut dining table is not just furniture; it is the soul of our client's London residence. Their attention to joinery is unparalleled in modern luxury."</p>
+                <h5>JULIAN THORNE</h5>
+                <span>PRINCIPAL DESIGNER, THORNE & CO.</span>
+            </div>
+            <div class="testi highlight">
+                <div class="stars">★★★★★</div>
+                <p>"As a collector of 18th-century antiquities, I am rarely moved by contemporary work. However, the bespoke writing desk commissioned from Nakkasi possesses a timeless weight and spirit."</p>
+                <h5>ELENA MORETTI</h5>
+                <span>LUXURY ART COLLECTOR, MILAN</span>
+            </div>
+            <div class="testi">
+                <div class="stars">★★★★★</div>
+                <p>"Their ability to bridge traditional Mewari aesthetics with the spatial requirements of a high-tech smart home is why they are our primary choice for bespoke architectural elements."</p>
+                <h5>SANJAY MEHTA</h5>
+                <span>LEAD ARCHITECT, MEHTA DESIGNS</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container footer-grid">
+        <div>
+            <h4>NAKKASI</h4>
+            <p>Preserving the soul of Udaipur's craftsmanship since 1954. Every piece is a testament to seventy years of uncompromising artistry.</p>
+        </div>
+        <div>
+            <h5>INQUIRIES</h5>
+            <ul>
+                <li><a href="#">The Inner Circle</a></li>
+                <li><a href="bespoke.html">Bespoke Services</a></li>
+                <li><a href="atelier.html">Atelier Tours</a></li>
+            </ul>
+        </div>
+        <div>
+            <h5>HERITAGE</h5>
+            <ul>
+                <li><a href="story.html">Our Story</a></li>
+                <li><a href="#">Care Guide</a></li>
+                <li><a href="#">Global Shipping</a></li>
+            </ul>
+        </div>
+        <div>
+            <h5>LEGAL</h5>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Ethical Sourcing</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 1954 Nakkasi. Seventy Years of Uncompromising Craftsmanship.</p>
+    </div>
+</footer>
+
+<div id="toast" class="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>

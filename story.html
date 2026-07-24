@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Story - Nakkasi</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo">NAKKASI</a>
+        <ul class="nav-links">
+            <li><a href="collections.html">Collections</a></li>
+            <li><a href="story.html" class="active">Our Story</a></li>
+            <li><a href="bespoke.html">Bespoke</a></li>
+            <li><a href="atelier.html">Atelier</a></li>
+        </ul>
+        <div class="nav-icons">
+            <button class="icon-btn" onclick="toggleCart()">🛍</button>
+            <button class="icon-btn" onclick="toggleAccount()">👤</button>
+        </div>
+    </div>
+</nav>
+
+<section class="story-hero">
+    <p class="section-tag">OUR HERITAGE</p>
+    <h2 class="serif-heading">HERITAGE UDAIPUR</h2>
+    <div class="story-image">
+        <img src="https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?w=1400" alt="Heritage">
+        <div class="story-overlay">
+            <div class="badge-tag"><em>70 Years of Legacy</em></div>
+            <h1>Born from the Dust of 1954.</h1>
+            <p>In the narrow lanes of Udaipur, our founder started with nothing but a set of tempered steel chisels and a vision to preserve the vanishing art of Mewari craftsmanship.</p>
+        </div>
+    </div>
+</section>
+
+<section class="artisans">
+    <div class="container">
+        <h2 class="text-center">The Master Artisans</h2>
+        <p class="text-center subtitle">Custodians of a 3rd generation legacy. These are the hands that define Nakkasi.</p>
+        <div class="artisan-grid">
+            <div class="artisan"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400" alt=""><h4>Master Rajesh</h4><p>Head Carver</p></div>
+            <div class="artisan"><img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400" alt=""><h4>Master Vikram</h4><p>Wood Specialist</p></div>
+            <div class="artisan"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400" alt=""><h4>Master Arun</h4><p>Inlay Artist</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="sustainability">
+    <div class="container sustain-box">
+        <div>
+            <p class="section-tag gold">OUR RESPONSIBILITY</p>
+            <h2>A Sustainable Future for Rare Woods.</h2>
+            <p>We source our premium teak and walnut exclusively from certified plantations and reclaimed architectural structures. For every tree we utilize, we plant ten in the Aravali foothills—ensuring the craft lives for another seventy years.</p>
+            <div class="stats">
+                <div><h3>100<span>%</span></h3><p>TRACEABLE SOURCING</p></div>
+                <div><h3>15k<span>+</span></h3><p>TREES PLANTED</p></div>
+            </div>
+        </div>
+        <div class="sustain-img">
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600" alt="">
+        </div>
+    </div>
+</section>
+
+<section class="quality-cta">
+    <div class="badge-tag gold-border"><em>A Nakkasi Original</em></div>
+    <h2>Uncompromising Quality Since 1954.</h2>
+    <p>Our pieces are not just furniture; they are heirlooms. Each is hand-signed by the master artisan and accompanied by a certificate of provenance.</p>
+    <a href="atelier.html" class="btn btn-gold">EXPLORE THE ATELIER</a>
+</section>
+
+<footer class="footer">
+    <div class="container footer-grid">
+        <div>
+            <h4>NAKKASI</h4>
+            <p>Established 1954 in Udaipur, India.</p>
+        </div>
+        <div>
+            <h5>OUR SERVICES</h5>
+            <ul>
+                <li><a href="bespoke.html">Bespoke Services</a></li>
+                <li><a href="#">The Inner Circle</a></li>
+                <li><a href="#">Care Guide</a></li>
+            </ul>
+        </div>
+        <div>
+            <h5>INFORMATION</h5>
+            <ul>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Store Locator</a></li>
+            </ul>
+        </div>
+        <div>
+            <h5>NEWSLETTER</h5>
+            <p>Join our circle for exclusive artisan narratives.</p>
+            <form onsubmit="handleNewsletter(event)" class="mini-form">
+                <input type="email" placeholder="Email Address" required>
+                <button type="submit">→</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 1954 NAKKASI. SEVENTY YEARS OF UNCOMPROMISING CRAFTSMANSHIP.</p>
+    </div>
+</footer>
+
+<div id="toast" class="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>

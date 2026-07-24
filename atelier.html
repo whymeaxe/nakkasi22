@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Atelier - Nakkasi</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo">NAKKASI</a>
+        <ul class="nav-links">
+            <li><a href="collections.html">Collections</a></li>
+            <li><a href="story.html">Our Story</a></li>
+            <li><a href="bespoke.html">Bespoke</a></li>
+            <li><a href="atelier.html" class="active">Atelier</a></li>
+        </ul>
+        <div class="nav-icons">
+            <button class="icon-btn" onclick="toggleCart()">🛍</button>
+            <button class="icon-btn" onclick="toggleAccount()">👤</button>
+        </div>
+    </div>
+</nav>
+
+<section class="bespoke-intro container">
+    <h1 class="huge">The Atelier.</h1>
+    <p class="lead">Visit our workshop in Udaipur where every piece begins its journey.</p>
+    <a href="bespoke.html" class="btn btn-dark">BOOK A VISIT</a>
+</section>
+
+<footer class="footer">
+    <div class="container footer-grid">
+        <div><h4>NAKKASI</h4></div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 1954 Nakkasi.</p>
+    </div>
+</footer>
+<div id="toast" class="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
